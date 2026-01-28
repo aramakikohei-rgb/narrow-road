@@ -1,0 +1,35 @@
+{
+  "id": "002",
+  "slug": "dubai-creek",
+  "title_ja": "ドバイ・クリークの黄昏",
+  "title_en": "Twilight at Dubai Creek",
+  "body_ja": "アブラ船の\n水面に揺れる\n砂漠の冬の灯",
+  "body_en": "An abra boat\nlights trembling on the water\ndesert winter glow",
+  "date_created": "2025-01-20",
+  "location": {
+    "name_ja": "ドバイ・クリーク",
+    "name_en": "Dubai Creek",
+    "lat": 25.2631,
+    "lng": 55.2975,
+    "country": "UAE",
+    "region": "Dubai"
+  },
+  "audio": {
+    "file": "/audio/dubai-creek.mp3",
+    "duration": 52,
+    "type": "audio/mpeg"
+  },
+  "images": [
+    {
+      "file": "/images/poems/dubai-creek-01.jpg",
+      "alt_ja": "ドバイクリークの夕暮れとアブラ船",
+      "alt_en": "Sunset over Dubai Creek with abra boats",
+      "caption_ja": "ドバイ・クリーク",
+      "caption_en": "Dubai Creek",
+      "is_primary": true
+    }
+  ],
+  "tags": ["water", "twilight", "desert"],
+  "season": "winter",
+  "status": "published"
+}

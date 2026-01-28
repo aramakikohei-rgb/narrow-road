@@ -1,0 +1,35 @@
+{
+  "id": "001",
+  "slug": "shibuya-crossing",
+  "title_ja": "渋谷の交差点にて",
+  "title_en": "At Shibuya Crossing",
+  "body_ja": "信号が変わる\n千の足音が\n冬の雨に溶ける",
+  "body_en": "The light changes\na thousand footsteps\ndissolve into winter rain",
+  "date_created": "2025-01-15",
+  "location": {
+    "name_ja": "渋谷スクランブル交差点",
+    "name_en": "Shibuya Crossing",
+    "lat": 35.6595,
+    "lng": 139.7004,
+    "country": "Japan",
+    "region": "Tokyo"
+  },
+  "audio": {
+    "file": "/audio/shibuya-crossing.mp3",
+    "duration": 45,
+    "type": "audio/mpeg"
+  },
+  "images": [
+    {
+      "file": "/images/poems/shibuya-crossing-01.jpg",
+      "alt_ja": "渋谷スクランブル交差点の雨の夜景",
+      "alt_en": "Rainy night at Shibuya Crossing",
+      "caption_ja": "東京・渋谷",
+      "caption_en": "Shibuya, Tokyo",
+      "is_primary": true
+    }
+  ],
+  "tags": ["urban", "rain", "night"],
+  "season": "winter",
+  "status": "published"
+}

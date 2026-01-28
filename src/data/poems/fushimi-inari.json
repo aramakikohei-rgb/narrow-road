@@ -1,0 +1,35 @@
+{
+  "id": "003",
+  "slug": "fushimi-inari",
+  "title_ja": "伏見稲荷の秋",
+  "title_en": "Autumn at Fushimi Inari",
+  "body_ja": "朱の鳥居\n千本の影が\n落葉と重なる",
+  "body_en": "Vermilion torii\na thousand shadows\noverlap the fallen leaves",
+  "date_created": "2024-11-03",
+  "location": {
+    "name_ja": "伏見稲荷大社",
+    "name_en": "Fushimi Inari Shrine",
+    "lat": 34.9671,
+    "lng": 135.7727,
+    "country": "Japan",
+    "region": "Kyoto"
+  },
+  "audio": {
+    "file": "/audio/fushimi-inari.mp3",
+    "duration": 38,
+    "type": "audio/mpeg"
+  },
+  "images": [
+    {
+      "file": "/images/poems/fushimi-inari-01.jpg",
+      "alt_ja": "伏見稲荷大社の千本鳥居と紅葉",
+      "alt_en": "Senbon Torii gates with autumn leaves at Fushimi Inari",
+      "caption_ja": "京都・伏見稲荷大社",
+      "caption_en": "Fushimi Inari, Kyoto",
+      "is_primary": true
+    }
+  ],
+  "tags": ["shrine", "autumn", "torii"],
+  "season": "autumn",
+  "status": "published"
+}

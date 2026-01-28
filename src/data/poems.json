@@ -1,0 +1,146 @@
+[
+  {
+    "id": "001",
+    "slug": "shibuya-crossing",
+    "title": {
+      "ja": "渋谷の交差点にて",
+      "en": "At Shibuya Crossing"
+    },
+    "body": {
+      "ja": "信号が変わる\n千の足音が\n冬の雨に溶ける",
+      "en": "The light changes\na thousand footsteps\ndissolve into winter rain"
+    },
+    "date_created": "2025-01-15",
+    "location": {
+      "name": {
+        "ja": "渋谷スクランブル交差点",
+        "en": "Shibuya Crossing"
+      },
+      "coordinates": { "lat": 35.6595, "lng": 139.7004 },
+      "country": "Japan",
+      "region": "Tokyo"
+    },
+    "media": {
+      "audio": {
+        "file": "/audio/shibuya-crossing.mp3",
+        "duration": 45,
+        "type": "audio/mpeg"
+      },
+      "images": [
+        {
+          "file": "/images/poems/shibuya-crossing-01.jpg",
+          "alt": {
+            "ja": "渋谷スクランブル交差点の雨の夜景",
+            "en": "Rainy night at Shibuya Crossing"
+          },
+          "caption": {
+            "ja": "東京・渋谷",
+            "en": "Shibuya, Tokyo"
+          },
+          "is_primary": true
+        }
+      ]
+    },
+    "metadata": {
+      "tags": ["urban", "rain", "night"],
+      "season": "winter",
+      "status": "published"
+    }
+  },
+  {
+    "id": "002",
+    "slug": "dubai-creek",
+    "title": {
+      "ja": "ドバイ・クリークの黄昏",
+      "en": "Twilight at Dubai Creek"
+    },
+    "body": {
+      "ja": "アブラ船の\n水面に揺れる\n砂漠の冬の灯",
+      "en": "An abra boat\nlights trembling on the water\ndesert winter glow"
+    },
+    "date_created": "2025-01-20",
+    "location": {
+      "name": {
+        "ja": "ドバイ・クリーク",
+        "en": "Dubai Creek"
+      },
+      "coordinates": { "lat": 25.2631, "lng": 55.2975 },
+      "country": "UAE",
+      "region": "Dubai"
+    },
+    "media": {
+      "audio": {
+        "file": "/audio/dubai-creek.mp3",
+        "duration": 52,
+        "type": "audio/mpeg"
+      },
+      "images": [
+        {
+          "file": "/images/poems/dubai-creek-01.jpg",
+          "alt": {
+            "ja": "ドバイクリークの夕暮れとアブラ船",
+            "en": "Sunset over Dubai Creek with abra boats"
+          },
+          "caption": {
+            "ja": "ドバイ・クリーク",
+            "en": "Dubai Creek"
+          },
+          "is_primary": true
+        }
+      ]
+    },
+    "metadata": {
+      "tags": ["water", "twilight", "desert"],
+      "season": "winter",
+      "status": "published"
+    }
+  },
+  {
+    "id": "003",
+    "slug": "fushimi-inari",
+    "title": {
+      "ja": "伏見稲荷の秋",
+      "en": "Autumn at Fushimi Inari"
+    },
+    "body": {
+      "ja": "朱の鳥居\n千本の影が\n落葉と重なる",
+      "en": "Vermilion torii\na thousand shadows\noverlap the fallen leaves"
+    },
+    "date_created": "2024-11-03",
+    "location": {
+      "name": {
+        "ja": "伏見稲荷大社",
+        "en": "Fushimi Inari Shrine"
+      },
+      "coordinates": { "lat": 34.9671, "lng": 135.7727 },
+      "country": "Japan",
+      "region": "Kyoto"
+    },
+    "media": {
+      "audio": {
+        "file": "/audio/fushimi-inari.mp3",
+        "duration": 38,
+        "type": "audio/mpeg"
+      },
+      "images": [
+        {
+          "file": "/images/poems/fushimi-inari-01.jpg",
+          "alt": {
+            "ja": "伏見稲荷大社の千本鳥居と紅葉",
+            "en": "Senbon Torii gates with autumn leaves at Fushimi Inari"
+          },
+          "caption": {
+            "ja": "京都・伏見稲荷大社",
+            "en": "Fushimi Inari, Kyoto"
+          },
+          "is_primary": true
+        }
+      ]
+    },
+    "metadata": {
+      "tags": ["shrine", "autumn", "torii"],
+      "season": "autumn",
+      "status": "published"
+    }
+  }
+]
