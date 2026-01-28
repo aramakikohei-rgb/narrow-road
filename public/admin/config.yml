@@ -2,9 +2,8 @@ backend:
   name: github
   repo: aramakikohei-rgb/narrow-road
   branch: main
-
-# For local development, run: npx decap-server
-local_backend: true
+  auth_type: pkce
+  app_id: Ov23liB5BBJ2i6xuheno
 
 media_folder: public/images/poems
 public_folder: /images/poems
@@ -18,128 +17,47 @@ collections:
     format: json
     slug: "{{slug}}"
     identifier_field: slug
-    summary: "{{title_en}} ({{location_region}})"
     fields:
-      - { label: ID, name: id, widget: string, hint: "Unique identifier (e.g., 001, 002)" }
-      - { label: Slug, name: slug, widget: string, hint: "URL-friendly name (e.g., shibuya-crossing)" }
-
-      # Title
-      - label: Title (Japanese)
-        name: title_ja
-        widget: string
-      - label: Title (English)
-        name: title_en
-        widget: string
-
-      # Body
-      - label: Poem Body (Japanese)
-        name: body_ja
-        widget: text
-        hint: "Use \\n for line breaks"
-      - label: Poem Body (English)
-        name: body_en
-        widget: text
-        hint: "Use \\n for line breaks"
-
-      - label: Date Created
-        name: date_created
-        widget: datetime
-        format: "YYYY-MM-DD"
-        date_format: "YYYY-MM-DD"
-        time_format: false
-
-      # Location
+      - { label: ID, name: id, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: "Title (Japanese)", name: title_ja, widget: string }
+      - { label: "Title (English)", name: title_en, widget: string }
+      - { label: "Poem Body (Japanese)", name: body_ja, widget: text }
+      - { label: "Poem Body (English)", name: body_en, widget: text }
+      - { label: "Date Created", name: date_created, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
       - label: Location
         name: location
         widget: object
         fields:
-          - label: Name (Japanese)
-            name: name_ja
-            widget: string
-          - label: Name (English)
-            name: name_en
-            widget: string
-          - label: Latitude
-            name: lat
-            widget: number
-            value_type: float
-            step: 0.0001
-          - label: Longitude
-            name: lng
-            widget: number
-            value_type: float
-            step: 0.0001
-          - label: Country
-            name: country
-            widget: string
-          - label: Region
-            name: region
-            widget: string
-
-      # Audio
+          - { label: "Name (Japanese)", name: name_ja, widget: string }
+          - { label: "Name (English)", name: name_en, widget: string }
+          - { label: Latitude, name: lat, widget: number, value_type: float }
+          - { label: Longitude, name: lng, widget: number, value_type: float }
+          - { label: Country, name: country, widget: string }
+          - { label: Region, name: region, widget: string }
       - label: Audio
         name: audio
         widget: object
         fields:
-          - label: Audio File
-            name: file
-            widget: file
-            media_folder: /public/audio
-            public_folder: /audio
-          - label: Duration (seconds)
-            name: duration
-            widget: number
-            value_type: int
-          - label: Type
-            name: type
-            widget: hidden
-            default: "audio/mpeg"
-
-      # Images
+          - { label: "Audio File", name: file, widget: file }
+          - { label: "Duration (seconds)", name: duration, widget: number, value_type: int }
+          - { label: Type, name: type, widget: hidden, default: "audio/mpeg" }
       - label: Images
         name: images
         widget: list
-        summary: "{{fields.alt_en}}"
         fields:
-          - label: Image File
-            name: file
-            widget: image
-          - label: Alt Text (Japanese)
-            name: alt_ja
-            widget: string
-          - label: Alt Text (English)
-            name: alt_en
-            widget: string
-          - label: Caption (Japanese)
-            name: caption_ja
-            widget: string
-          - label: Caption (English)
-            name: caption_en
-            widget: string
-          - label: Primary Image
-            name: is_primary
-            widget: boolean
-            default: false
-
-      # Metadata
-      - label: Tags
-        name: tags
-        widget: list
-        allow_add: true
-        field: { label: Tag, name: tag, widget: string }
-
+          - { label: "Image File", name: file, widget: image }
+          - { label: "Alt Text (Japanese)", name: alt_ja, widget: string }
+          - { label: "Alt Text (English)", name: alt_en, widget: string }
+          - { label: "Caption (Japanese)", name: caption_ja, widget: string }
+          - { label: "Caption (English)", name: caption_en, widget: string }
+          - { label: "Primary Image", name: is_primary, widget: boolean, default: false }
+      - { label: Tags, name: tags, widget: list }
       - label: Season
         name: season
         widget: select
-        options:
-          - { label: Spring, value: spring }
-          - { label: Summer, value: summer }
-          - { label: Autumn, value: autumn }
-          - { label: Winter, value: winter }
-
+        options: [spring, summer, autumn, winter]
       - label: Status
         name: status
         widget: select
-        options:
-          - { label: Published, value: published }
-          - { label: Draft, value: draft }
+        options: [published, draft]
