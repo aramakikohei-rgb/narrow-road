@@ -5,96 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Narrow Road CMS</title>
-    <script>
-      // Prevent auto-init so we can configure manually
-      window.CMS_MANUAL_INIT = true;
-    </script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <link href="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.css" rel="stylesheet" />
   </head>
   <body>
-    <script>
-      CMS.init({
-        config: {
-          backend: {
-            name: "github",
-            repo: "aramakikohei-rgb/narrow-road",
-            branch: "main"
-          },
-          media_folder: "public/images/poems",
-          public_folder: "/images/poems",
-          collections: [
-            {
-              name: "poems",
-              label: "Poems",
-              folder: "src/data/poems",
-              create: true,
-              extension: "json",
-              format: "json",
-              slug: "{{slug}}",
-              identifier_field: "slug",
-              summary: "{{title_en}}",
-              fields: [
-                { label: "ID", name: "id", widget: "string", hint: "Unique identifier (e.g., 001)" },
-                { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly name" },
-                { label: "Title (Japanese)", name: "title_ja", widget: "string" },
-                { label: "Title (English)", name: "title_en", widget: "string" },
-                { label: "Poem Body (Japanese)", name: "body_ja", widget: "text" },
-                { label: "Poem Body (English)", name: "body_en", widget: "text" },
-                { label: "Date Created", name: "date_created", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false },
-                {
-                  label: "Location",
-                  name: "location",
-                  widget: "object",
-                  fields: [
-                    { label: "Name (Japanese)", name: "name_ja", widget: "string" },
-                    { label: "Name (English)", name: "name_en", widget: "string" },
-                    { label: "Latitude", name: "lat", widget: "number", value_type: "float" },
-                    { label: "Longitude", name: "lng", widget: "number", value_type: "float" },
-                    { label: "Country", name: "country", widget: "string" },
-                    { label: "Region", name: "region", widget: "string" }
-                  ]
-                },
-                {
-                  label: "Audio",
-                  name: "audio",
-                  widget: "object",
-                  fields: [
-                    { label: "Audio File", name: "file", widget: "file" },
-                    { label: "Duration (seconds)", name: "duration", widget: "number", value_type: "int" },
-                    { label: "Type", name: "type", widget: "hidden", default: "audio/mpeg" }
-                  ]
-                },
-                {
-                  label: "Images",
-                  name: "images",
-                  widget: "list",
-                  fields: [
-                    { label: "Image File", name: "file", widget: "image" },
-                    { label: "Alt Text (Japanese)", name: "alt_ja", widget: "string" },
-                    { label: "Alt Text (English)", name: "alt_en", widget: "string" },
-                    { label: "Caption (Japanese)", name: "caption_ja", widget: "string" },
-                    { label: "Caption (English)", name: "caption_en", widget: "string" },
-                    { label: "Primary Image", name: "is_primary", widget: "boolean", default: false }
-                  ]
-                },
-                { label: "Tags", name: "tags", widget: "list" },
-                {
-                  label: "Season",
-                  name: "season",
-                  widget: "select",
-                  options: ["spring", "summer", "autumn", "winter"]
-                },
-                {
-                  label: "Status",
-                  name: "status",
-                  widget: "select",
-                  options: ["published", "draft"]
-                }
-              ]
-            }
-          ]
-        }
-      });
-    </script>
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
   </body>
 </html>
