@@ -7,9 +7,9 @@ import PoemPreview from "@/components/preview/PoemPreview";
 
 const poemIcon = new L.Icon({
   iconUrl: "/markers/marker-poem.svg",
-  iconSize: [24, 24],
-  iconAnchor: [12, 24],
-  popupAnchor: [0, -28],
+  iconSize: [16, 16],
+  iconAnchor: [8, 8],
+  popupAnchor: [0, -12],
 });
 
 interface PoemMarkerProps {
